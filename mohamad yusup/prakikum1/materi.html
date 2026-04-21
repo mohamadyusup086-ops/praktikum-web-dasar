@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Praktikum Web Dasar</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <h1>Praktikum Web Dasar</h1>
+
+    <img src="gambar.jpg" alt="foto profil">
+
+    <main>
+
+        <section>
+            <h2>Data Mahasiswa</h2>
+            <p>Nama: Mohamad Yusup</p>
+            <p>Prodi: Teknik Informatika</p>
+            <p>NIM: 2440511006</p>
+        </section>
+
+        <section>
+            <h2>Hobi Saya</h2>
+            <table border="1">
+                <tr>
+                    <th>No</th>
+                    <th>Hobi</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Main game</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Nonton</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Form Kontak</h2>
+
+            <p id="status">Isi dulu ya datanya</p>
+
+            <form>
+                <label>Nama:</label>
+                <input type="text" id="nama">
+
+                <label>Email:</label>
+                <input type="email" required>
+
+                <button type="button" onclick="kirim()">Kirim</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Hitung Nilai</h2>
+
+            <input type="number" id="tugas" placeholder="nilai tugas">
+            <input type="number" id="uts" placeholder="nilai uts">
+            <input type="number" id="uas" placeholder="nilai uas">
+
+            <button onclick="hitung()">Hitung</button>
+
+            <p id="hasil"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>2026 - Teknik Informatika</p>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
